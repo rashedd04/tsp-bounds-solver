@@ -1,0 +1,64 @@
+Calcul de TOUTES les méthodes en cours... Patience !
+
+
+-------------------------------------------------------------------------------------
+TABLE 1: UPPER BOUNDS (COÛTS)
+Instance        Type  | NN       NI       ST-Heur  | NN+2Opt   NI+2Opt   NN+Tabu  
+-------------------------------------------------------------------------------------
+instance_8nodes STSP  | 15.0     13.0     14.0     | 15.0      13.0      14.0     
+warehouse_5v_10p STSP  | 234.0    230.0    250.0    | 230.0     230.0     230.0    
+warehouse_10v_30p STSP  | 658.0    690.0    742.0    | 638.0     590.0     558.0    
+warehouse_10v_50p STSP  | 666.0    688.0    754.0    | 548.0     548.0     548.0    
+bays29          STSP  | 2258.0   2262.0   2632.0   | 2183.0    2110.0    2139.0   
+dantzig42       STSP  | 956.0    834.0    890.0    | 821.0     734.0     752.0    
+pr76            STSP  | 153461.9 128992.7 146365.5 | 119488.5  122331.1  114262.9 
+ftv33           ATSP  | 1683.0   1504.0   2089.0   | N/A       N/A       N/A      
+p43             ATSP  | 5768.0   5655.0   5687.0   | N/A       N/A       N/A      
+ftv70           ATSP  | 2571.0   2294.0   3551.0   | N/A       N/A       N/A      
+
+-------------------------------------------------------------------------------------
+TABLE 2: UPPER BOUNDS (TEMPS D'EXÉCUTION)
+Instance        Type  | NN       NI       ST-Heur  | NN+2Opt   NI+2Opt   NN+Tabu  
+-------------------------------------------------------------------------------------
+instance_8nodes STSP  | 0.000s   0.000s   0.000s   | 0.000s    0.000s    0.001s   
+warehouse_5v_10p STSP  | 0.000s   0.000s   0.000s   | 0.000s    0.000s    0.001s   
+warehouse_10v_30p STSP  | 0.000s   0.001s   0.000s   | 0.001s    0.002s    0.017s   
+warehouse_10v_50p STSP  | 0.000s   0.003s   0.000s   | 0.003s    0.006s    0.041s   
+bays29          STSP  | 0.000s   0.001s   0.000s   | 0.000s    0.001s    0.013s   
+dantzig42       STSP  | 0.000s   0.002s   0.000s   | 0.002s    0.003s    0.025s   
+pr76            STSP  | 0.000s   0.010s   0.001s   | 0.007s    0.014s    0.096s   
+ftv33           ATSP  | 0.000s   0.001s   0.000s   | N/A       N/A       N/A      
+p43             ATSP  | 0.000s   0.002s   0.000s   | N/A       N/A       N/A      
+ftv70           ATSP  | 0.000s   0.008s   0.001s   | N/A       N/A       N/A      
+
+--------------------------------------------------------------------------------
+TABLE 3: LOWER BOUNDS (COÛTS)
+Instance        Type  | Assign(AP)   1-Tree     Lagrangien   Dantzig_LP
+--------------------------------------------------------------------------------
+instance_8nodes STSP  | 8.0          10.0       13.0         10.0      
+warehouse_5v_10p STSP  | 168.0        217.0      230.0        230.0     
+warehouse_10v_30p STSP  | 416.0        460.0      533.2        509.0     
+warehouse_10v_50p STSP  | 262.0        458.0      540.3        498.3     
+bays29          STSP  | 1764.0       1622.0     2013.5       2013.5    
+dantzig42       STSP  | 532.0        600.0      697.0        697.0     
+pr76            STSP  | 77117.7      90112.4    105120.3     105120.3  
+ftv33           ATSP  | 1185.0       N/A        N/A          1219.5    
+p43             ATSP  | 148.0        N/A        N/A          216.0     
+ftv70           ATSP  | 1766.0       N/A        N/A          1777.0    
+
+--------------------------------------------------------------------------------
+TABLE 4: LOWER BOUNDS (TEMPS D'EXÉCUTION)
+Instance        Type  | Assign(AP)   1-Tree     Lagrangien   Dantzig_LP
+--------------------------------------------------------------------------------
+instance_8nodes STSP  | 0.000s       0.000s     0.041s       0.003s    
+warehouse_5v_10p STSP  | 0.000s       0.000s     0.045s       0.005s    
+warehouse_10v_30p STSP  | 0.000s       0.001s     0.139s       0.037s    
+warehouse_10v_50p STSP  | 0.000s       0.000s     0.252s       1.296s    
+bays29          STSP  | 0.000s       0.000s     0.102s       0.026s    
+dantzig42       STSP  | 0.000s       0.000s     0.178s       0.083s    
+pr76            STSP  | 0.000s       0.001s     0.509s       0.691s    
+ftv33           ATSP  | 0.000s       N/A        N/A          1.247s    
+p43             ATSP  | 0.000s       N/A        N/A          1.512s    
+ftv70           ATSP  | 0.000s       N/A        N/A          3.470s    
+--------------------------------------------------------------------------------
+
